@@ -1,9 +1,10 @@
 .nav {
     background-color: #1c1b23;
     color: #fff;
+    z-index: 10000;
     /* padding: 10px; */
   }
-  
+
   .nav-container {
     display: flex;
     justify-content: space-around;
@@ -71,6 +72,7 @@
       left: 0;
       width: 100%;
       align-items: center;
+      z-index: 100  ;
     }
 
     .nav-menu li{

@@ -1,11 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .Hero {
-  background-color: #f0f0f0;
+  background-color: #191924 ;
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  height: 60vh;
+  height: 80vh;
   margin: auto;
+  overflow: hidden;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  /* background-color: red; */
 }
 
 .intro {
@@ -15,6 +25,7 @@
 .intro h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+
 }
 
 .intro p {
@@ -23,7 +34,8 @@
 }
 
 .name {
-  color: #00bcd4;
+  color: #9000ff;
+  font-weight: 500;
 }
 
 .ViewWork {
@@ -51,16 +63,25 @@
   position: relative;
 }
 
+.pro {
+  z-index: 1;
+}
+
+.Bgpro {
+  /* transform: rotate(10deg) scale(1.5); */
+  rotate: 10deg;
+  scale: 1.5;
+}
 .ProfilePic img {
-  width: 80%;
-  max-width: 79%;
+  margin:auto;
+  height: 60vh;
   border-radius: 10px;
   position: absolute;
   top: 0;
   right: 100px;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
-.ProfilePic img:nth-child(2):hover {
-  transform: translateX(-10%);
+.ProfilePic img:hover {
+  transform: scale(1.1);
 }

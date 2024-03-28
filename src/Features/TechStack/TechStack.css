@@ -1,0 +1,50 @@
+.TechSec{
+height: 60vh;
+background-color: #1c1c27;
+color: white;
+}
+
+
+.DisplayFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Skills h1{
+  font-size: 2rem;
+  font-weight: 800;
+
+}
+
+.Skills span{
+  font-size: 1rem;
+
+}
+
+.tech-stack-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tech-stack-item {
+  text-align: center;
+}
+
+.tech-stack-item img {
+  width: 100px; /* Adjust as needed */
+  height: auto;
+  margin: 0 20px;
+}
+
+.tech-stack-item p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
