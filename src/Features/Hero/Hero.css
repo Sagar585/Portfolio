@@ -1,0 +1,66 @@
+.Hero {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 60vh;
+  margin: auto;
+}
+
+.intro {
+  flex: 1;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.name {
+  color: #00bcd4;
+}
+
+.ViewWork {
+  margin-top: 20px;
+}
+
+.ViewWork a {
+  color: #fff;
+  background-color: #00bcd4;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.ViewWork a:hover {
+  background-color: #0097a7;
+}
+
+.ProfilePic {
+  flex: 1;
+  height: 60vh;
+  border-radius: 10px;
+  position: relative;
+}
+
+.ProfilePic img {
+  width: 80%;
+  max-width: 79%;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  right: 100px;
+  transition: transform 0.3s ease;
+}
+
+.ProfilePic img:nth-child(2):hover {
+  transform: translateX(-10%);
+}
