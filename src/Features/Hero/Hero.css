@@ -1,9 +1,4 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
+/* Hero.css */
 .Hero {
   background-color: #191924;
   display: flex;
@@ -15,7 +10,6 @@
   overflow: hidden;
   color: white;
   font-family: "Poppins", sans-serif;
-  /* background-color: red; */
 }
 
 .intro {
@@ -61,39 +55,59 @@
   box-shadow: rgb(31, 38, 52) 20px 20px 60px, rgb(31, 38, 52) -20px -20px 60px;
   transition: all 0.2s ease-in-out 0s !important;
   margin-right: 10px;
+  
 }
 
 .ViewWork a:hover {
   transform: scale(1.05);
+  filter: drop-shadow(0 0 0.75rem #9000ff);
+
   transition: all 0.4s ease-in-out 0s;
 }
 
 .ProfilePic {
   flex: 1;
-  height: 60vh;
-  border-radius: 10px;
-  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  
 }
 
-.pro {
-  z-index: 1;
-}
-
-.Bgpro {
-  /* transform: rotate(10deg) scale(1.5); */
-  rotate: 10deg;
-  scale: 1.5;
-}
 .ProfilePic img {
-  margin: auto;
-  height: 60vh;
-  border-radius: 10px;
+  height: 70%;
+  max-width: 100%;
   position: absolute;
-  top: 0;
-  right: 100px;
-  transition: transform 0.5s ease;
+  margin: 4.1rem auto;
+  border-radius: 10px;
+  /* filter: drop-shadow(0 0 0.75rem #9000ff); */
 }
 
-.ProfilePic img:hover {
-  transform: scale(1.1);
+@media screen and (max-width: 768px) {
+  .Hero {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .ProfilePic {
+    order: -1;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .ProfilePic img {
+    width: 80%;
+    height: auto;
+    max-height: 50vh;
+    position: relative;
+    right: auto;
+  }
+  .ViewWork a{
+    margin: 10px 0px;
+  }
+  .intro h1 {
+    font-size: 1.5rem;
+
+  }
 }
