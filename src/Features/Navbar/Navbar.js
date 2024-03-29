@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./Navbar.css";
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 import Logo from "../../assets/Logo.webp";
 
 export default function Navbar() {
@@ -14,23 +14,20 @@ export default function Navbar() {
     <nav className="nav">
       <div className="nav-container">
         <div className="Logo">
-          <img src={Logo} alt="Logo" />
+          <Link to = '/' ><img  src={Logo} alt="Logo" /></Link>
         </div>
         <div className={`menu-toggle ${isMenuOpen ? "open" : ""}`} onClick={toggleMenu}>
           <div className="hamburger"></div>
         </div>
         <ul className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
           <li>
-            <Link to="/">Home</Link>
+            <a href="#Home">About Me</a>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <a href="#Projects">Projects</a>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
+            <a href="#ContactMe">Contact</a>
           </li>
         </ul>
       </div>

@@ -1,0 +1,29 @@
+.ContactMeHead {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #8578e6;
+  padding-top: 10px;
+  background-color: #1c1c27;
+}
+
+.ContactMe{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #1c1c27;
+
+}
+.ContactItems i{
+    font-size: 2rem;
+    margin: 0 10px;
+    color: #b2aaf0;
+}
+.ContactItems i:hover{
+    color: #8578e6;
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}

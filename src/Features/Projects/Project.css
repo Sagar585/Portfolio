@@ -1,0 +1,62 @@
+
+.ProContainer{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
+    background-color: #14131a;
+    color: white;
+}
+
+    .Projects {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #8578e6;
+    padding-top: 20px;
+    background-color: #14131a;
+}
+
+
+.project-card h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #8578e6;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.project-card p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #b3b3b3;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.project-card{
+    width: 100%;
+    max-width: 350px;
+    border: 0.1px solid rgb(133, 76, 230);
+    border-radius: 16px;
+    padding: 18px 36px;
+    margin: 30px 20px;
+    background-color: #1c1b23;
+    font-weight: 400;
+}
+
+.project-card:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .ProContainer{
+        grid-template-columns: auto ;
+    }
+}
+
+
+

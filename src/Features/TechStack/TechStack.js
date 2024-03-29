@@ -30,12 +30,9 @@ export default function TechStack() {
 
   return (
     <>
-      <div className="DisplayFlex TechSec">
+      <div className="DisplayFlex TechSec" id="skills">
         <div className="Skills DisplayFlex">
-          <h1>Skills </h1>
-          <span>
-            Here are My Some Skills I Have Been Worked On Since My Past 1.5 Year
-          </span>
+          <h1>Skills</h1>
         </div>
         <div className="TechCardContainer">
 

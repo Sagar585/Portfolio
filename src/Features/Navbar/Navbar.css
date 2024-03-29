@@ -2,6 +2,9 @@
     background-color: #1c1b23;
     color: #fff;
     z-index: 10000;
+    position: fixed;
+    width: 100vw;
+    transition: 0.1s ease-in;
     /* padding: 10px; */
   }
 
@@ -68,7 +71,7 @@
       flex-direction: column;
       background-color: #1c1b23;
       position: absolute;
-      top: 90px;
+      top: 80px;
       left: 0;
       width: 100%;
       align-items: center;
